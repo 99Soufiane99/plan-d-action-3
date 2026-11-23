@@ -26,6 +26,17 @@ categories[index] = "Bureau"
 categories.pop()
 console.log(categories)
 
+// exercice 02
 
+console.log(`nom : ${boutique.nom} ||| la ville de la boutique : ${boutique.ville} `)
+boutique.devise = "MAD"
+boutique.ouverte = false
+
+if(boutique.ouverte){
+    console.log("ouverte")
+}
+else{
+    console.log("fermee")
+}
 
 
