@@ -39,4 +39,34 @@ else{
     console.log("fermee")
 }
 
+// exercice 04
+console.log(`\n-------------------- exercice 04------------------ \n`)
+let produitsuperieur0 = produits.filter(p=>p.stock > 0).filter(p=>p.categorie === "Papeterie")
+console.log(produitsuperieur0)
+
+//exercice05
+console.log(`\n-------------------- exercice 05------------------ \n`)
+
+let nommap = produits.map(p=> p.nom)
+
+console.log(nommap)
+
+let nomap2 = produits.map(p=>{return `Nom : ${p.nom} ||| prix : ${p.prix} DH`})
+console.log(nomap2)
+
+
+console.log(`\n -----------------------exercice 06 ----------------------------\n`)
+
+let nombreunite = produits.reduce((total, produit)=>{
+    return total + produit.stock
+},0)
+
+let stocktotal = produits.reduce((total, produit)=>{
+    return total +(produit.prix * produit.stock)
+},0)
+
+console.log(` unites : ${nombreunite}`)
+console.log(` valeur total du stock : ${stocktotal}`)
+
+
 
